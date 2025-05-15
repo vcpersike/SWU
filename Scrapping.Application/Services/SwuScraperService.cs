@@ -27,5 +27,11 @@ namespace Scraping.Application.Services
             await _swuHandler.CloseAsync();
             return page.Content;
         }
+
+        public async Task<string> GetContentAsync(string url)
+        {
+            var page = await _swuHandler.GetPageAsync(url);
+            return page.Content;
+        }
     }
 }

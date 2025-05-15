@@ -9,10 +9,12 @@ namespace Scraping.Domain.Models
     public class SwuPage
     {
         public string Content { get; set; }
+        public string Url { get; set; }
 
-        public SwuPage(string content)
+        public SwuPage(string content, string url)
         {
             Content = content;
+            Url = url;
         }
     }
 }

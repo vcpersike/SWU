@@ -72,7 +72,7 @@ namespace Scraping.Infra
 
             // ✅ 4. Captura o conteúdo renderizado
             var content = await puppeteerPage.GetContentAsync();
-            return new SwuPage(content);
+            return new SwuPage(content, url);
         }
 
         public async Task CloseAsync()

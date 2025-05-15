@@ -16,7 +16,6 @@
   <ItemGroup>
     <ProjectReference Include="..\Scraping.Infra\Scraping.Infra.csproj" />
     <ProjectReference Include="..\Scrapping.Application\Scraping.Application.csproj" />
-    <ProjectReference Include="..\Scrapping.Domain\Scraping.Domain.csproj" />
   </ItemGroup>
 
 </Project>
